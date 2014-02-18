@@ -1,0 +1,3 @@
+# Module testgae
+# RPC service class, partial path of RPC policy file
+testgae.client.GreetingService, 16B8879CBF0DF64CFF387B5BB3FBF7EF.gwt.rpc

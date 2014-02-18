@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="TestGAE.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Can You Be Googled?</title>
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    
+<script type="text/javascript"> 
+var a = window.location.href; 
+var scope = "publish_stream,user_likes,friends_likes";
+ if (window.location != window.parent.location) { 
+    window.parent.location  = a;  //app id change
+}  
+
+if(a.indexOf("code") < 0) { <!-- code nicht da  //-->
+		/*	 window.location = "https://graph.facebook.com/oauth/authorize?client_id=184025324975756&redirect_uri="+a+"&scope="+scope; */
+		
+			 /* window.location = "https://graph.facebook.com/oauth/authorize?client_id=155881654480689&redirect_uri="+a+"&scope="+scope; */		
+    window.location = "https://graph.facebook.com/oauth/authorize?client_id=184025324975756&redirect_uri="+a;
+    /*window.location = "https://graph.facebook.com/oauth/authorize?client_id=155881654480689&redirect_uri="+a;*/	
+} else { <!-- code da da  //-->
+
+   
+ if(a.indexOf("locale") < 0){
+	 if (navigator.language.indexOf("en") > -1) {
+		 window.location  = a+"&locale=en";
+		} else {
+			window.location  = a+"&locale=ger";
+		}	
+     }  
+
+
+
+  
+}
+ 
+</script>
+
+<script type="text/javascript">
+function locale (loc) {
+	 window.location  =  window.location.href.split("&")[0] + "&locale="+loc;
+}
+</script>
+
+    <script type="text/javascript" language="javascript" src="testgae/testgae.nocache.js"></script>
+    
+ 
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+<div width="900px">
+<!-- <h1 align="center" style="font-family:'Courier New','Courier',monospace;margin-bottom:-15px">Sichere deinen <img height="50px" src="fbook.png"> Account</h1>
+<h2 align="center" style="font-family:'Courier New','Courier',monospace;">Vorbeugen ist besser als Heilen</h2>
+<h3 width="900px" align="center" style="font-family:'Courier New','Courier',monospace;">Findest du es cool, wenn deine Daten auf Ewigkeiten auf chinesischen Spamservern gespeichert werden? Wurdest du Clickjacked?  Die Antworten findest du hier auf dieser Webseite.</h3> -->
+</div>
+<br><div width="760px" align="center"><a href="javascript:locale('ger')"><img src="ger.png"></a>   <a href="javascript:locale('en')"><img src="en.png"></a>   </div>
+<div width="760px" align="center" id="all"></div>
+ <div width="760px" align="center" id="rpc"></div>
+ 
+ <script type="text/javascript">
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/mJrIqkT3GGebOnVL5q7xDg.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+</script>
+
+  </body>
+</html>

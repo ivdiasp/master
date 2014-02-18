@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<title>Facebook Security App "Can You Be Googled"- by Technische Universität München</title>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>info</title>
+    <script type="text/javascript" language="javascript" src="testgae/testgae.nocache.js"></script>
+ 
+    
+<link rel="stylesheet" href="design.css" type="text/css">
+<script type="text/javascript"> 
+var a = window.location.href; 
+var scope = "publish_stream,user_likes,friends_likes";
+ if (window.location != window.parent.location) { 
+    window.parent.location  = a;  //app id change
+}   
+</script>
+  </head>
+
+  <body>
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+<div width="700px" style="margin:30px">  
+<h1><a href="/TestGAE2.html">Start Application</a></h1>
+ <br>
+
+<a target="_blank" href="http://www.youtube.com/embed/plzNAATHP0Y">Youtube Demo</a>
+  <hr>
+ <p><div margin-right:15px></div><b>Hilf yourself and your friends</b>:<br>
+  -  Facebook privacy: Check "public search" setting of you and your friends, did you / they disabled it?<br><br>
+  <img src="1.png"><br><br>
+  - Detect clickjacking victims: Check whether you or your friends became victims of clickjacking.(http://en.wikipedia.org/wiki/Clickjacking)<br><br>
+    <img width="200px" src="2.png"><br><br>
+  - Make use of search engines: Check what Google and "people search engines" know about you and your friends.<br><br>
+    <img  src="3.png"><br><br>
+  - Identity theft: Check whether you have "double" friends in your friend list (an attacker could set up a phony profile under the name of someone you know).<br><br>
+  <img src="4.png"><br><br>
+  -  Tell friends how to solve their issues: Post a link on their wall containing a short tutorial.
+</p>
+<hr>
+<p><div margin-right:15px><img  style="float:left" src="/rechte.png"></div>
+<b>Permissions</b><br>
+<span style="color:red;font-size:large;">1.</span> Is requested by every app on Facebook, cannot be turned of <br>
+<span style="color:red;font-size:large;">2.</span> Permission to post on wall. Reading the wall is not possible. <br>
+<span style="color:red;font-size:large;">3.</span> Is used to check whether you were clickjacked (<a href="http://en.wikipedia.org/wiki/Clickjacking" target="_blank">wikipedia.org/wiki/Clickjacking</a>)<br>
+<span style="color:red;font-size:large;">4.</span> Same as 3. but for your friends.  <br>
+</p>  
+Check it yourself: <a href="https://developers.facebook.com/docs/authentication/permissions/" target="_blank">developers.facebook.com/docs/authentication/permissions/</a>.<br>I fordere mit meiner App nur die Rechte: publish_stream,user_likes und friends_likes.
+
+<p>More info on Facebook security: <a href="www.clickjacked.org" target="_blank">clickjacked.org</a>.</p>
+
+</div> 
+
+ <script type="text/javascript">
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/mJrIqkT3GGebOnVL5q7xDg.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+</script>
+  </body>
+</html>

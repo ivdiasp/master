@@ -1,0 +1,2 @@
+serviceClass: testgae.client.GreetingService
+path: 16B8879CBF0DF64CFF387B5BB3FBF7EF.gwt.rpc

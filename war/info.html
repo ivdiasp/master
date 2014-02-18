@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<title>Facebook Security App "Can You Be Googled"- by Technische Universität München</title>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>info</title>
+    <script type="text/javascript" language="javascript" src="testgae/testgae.nocache.js"></script>
+ 
+    
+<link rel="stylesheet" href="design.css" type="text/css">
+<script type="text/javascript"> 
+var a = window.location.href; 
+var scope = "publish_stream,user_likes,friends_likes";
+ if (window.location != window.parent.location) { 
+    window.parent.location  = a;  //app id change
+}   
+</script>
+  </head>
+
+  <body>
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+<div width="700px" style="margin:30px">
+ 
+<h1><a href="/TestGAE.html">Starte Applikation</a></h1>
+ <br>
+
+<a target="_blank" href="http://www.youtube.com/embed/plzNAATHP0Y">Youtube Demo</a>
+<hr>
+
+ <p><div margin-right:15px></div><b>Hilf dir und deinen Freunden</b>:<br>
+  - Privatsphäreeinstellungen von dir und Freunden checken: Haben du / deine Freunde "öffentliche Suche" in Facebook abgestellt?<br><br>
+  <img src="1.png"><br><br>
+  - Clickjacking Attacken erkennen: Zeige alle deine "Likes" / alle "Likes" von Freunden an und ob diese das Überbleibsel einer Clickjacking Attacke sind (<a href="http://en.wikipedia.org/wiki/Clickjacking" target="_blank">en.wikipedia.org/wiki/Clickjacking</a>).<br><br>
+    <img width="200px" src="2.png"><br><br>
+  - Was weiß das Internet über mich und meine Freunde?: Hole direkt Suchergebnisse aus Google und Personensuchmaschinen über dich / deine Freunde, finde heraus was das Internet weiß.<br><br>
+    <img  src="3.png"><br><br>
+  - <a target="_blank" href="http://de.wikipedia.org/wiki/Identit%C3%A4tsdiebstahl">Identitätsdiebstahl</a>: Lass die App überprüfen, ob sich unter deinen Freunden doppelte Namen befinden.<br><br>
+  <img src="4.png"><br><br>
+  - Hilf deinen Freunden: Hole Suchergebnisse über sie direkt in die App.
+</p>
+<hr><br>
+<p><div margin-right:15px><img  style="float:left" src="/rechte.png"></div>
+<b>Permissions</b><br>
+<span style="color:red;font-size:large;">1.</span> fordert jede App auf Facebook, selbst wenn der Entwickler die Daten gar nicht braucht...<br>
+<span style="color:red;font-size:large;">2.</span> Erlaubnis an die Pinnwand zu posten. Pinnwand lesen ist nicht mögilch (dazu braucht man ein anderes Recht). <br>
+<span style="color:red;font-size:large;">3.</span> Wird genutzt um zu sehen ob du geclickjacked wurdest<br>
+<span style="color:red;font-size:large;">4.</span> Wie 3. nur für deine Freunde. <br><br>
+</p>  
+Überprüfe die Rechte selbst: <a href="https://developers.facebook.com/docs/authentication/permissions/" target="_blank">developers.facebook.com/docs/authentication/permissions/</a>.<br>I fordere mit meiner App nur die Rechte: publish_stream,user_likes und friends_likes.
+
+<p>Mehr Information über Facebook Security: <a href="www.clickjacked.org" target="_blank">clickjacked.org</a>.</p>
+ <script type="text/javascript">
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/mJrIqkT3GGebOnVL5q7xDg.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+</script>
+  </body>
+</html>
